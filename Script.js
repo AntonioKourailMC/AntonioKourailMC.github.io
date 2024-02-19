@@ -4,8 +4,6 @@
 	//Gets all of the functions used for this map from the ArcGIS javascript package
     require(["esri/config", "esri/Map", "esri/views/MapView","esri/widgets/Sketch","esri/layers/GraphicsLayer","esri/widgets/Home"], function(esriConfig, Map, MapView,Sketch,GraphicsLayer,Home) {
 
-        esriConfig.apiKey = "AAPK9ce4f3083275435cab0e1d96e522b3771K4RoyUTi5iTfQrTGzULOs9ryV13koZwhSNUV4B_HoSSi_CYw874YvxkCzYA-PXf"; //The apikey to view the map
-		
 		const graphicsLayer = new GraphicsLayer(); //Defines the graphicsLayer
 
 		//Defines the map
