@@ -4,7 +4,7 @@
 	//Gets all of the functions used for this map from the ArcGIS javascript package
     require(["esri/config", "esri/Map", "esri/views/MapView","esri/widgets/Sketch","esri/layers/GraphicsLayer","esri/widgets/Home"], function(esriConfig, Map, MapView,Sketch,GraphicsLayer,Home) {
 
-		const graphicsLayer = new GraphicsLayer(); //Defines the graphicsLayer
+	const graphicsLayer = new GraphicsLayer(); //Defines the graphicsLayer
 
 		//Defines the map
         const map = new Map({
