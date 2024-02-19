@@ -10,29 +10,29 @@
 
 	//Defines the map
         const map = new Map({
-          basemap: "arcgis/topographic", //Basemap of the map
-	  layers: [graphicsLayer] //Layers of the map
+        	basemap: "arcgis/topographic", //Basemap of the map
+		layers: [graphicsLayer] //Layers of the map
         });
 		
 	 //Displays the map on the webpage
          const view = new MapView({
-         map: map,
-         center: [-79.880804, 43.274831], //When the map is first opened, its starting location is Hamilton, Ontario Canada
-         zoom: 12, //The inital zoom of the map
-         container: "viewDiv" //Displays the map on the webpage
+         	map: map,
+         	center: [-79.880804, 43.274831], //When the map is first opened, its starting location is Hamilton, Ontario Canada
+        	zoom: 12, //The inital zoom of the map
+        	container: "viewDiv" //Displays the map on the webpage
         });
 		
 	  //Adds the home button on the map
 	  const homeBtn = new Home({
-          view: view
+          	view: view
         });
 		
 	  //Adds the sketch widget on the map
 	  view.when(() => {
-          const sketch = new Sketch({
-          layer: graphicsLayer,
-          view: view,
-          creationMode: "update"
+          	const sketch = new Sketch({
+          	layer: graphicsLayer,
+          	view: view,
+          	creationMode: "update"
         });
 		
 	  view.ui.add(sketch, "top-right"); //Fixs the position of the sketch width to the top right of the map
